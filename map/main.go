@@ -9,5 +9,11 @@ func main() {
 		"white": "#ffffff",
 	}
 
-	fmt.Println(colors)
+	printMap(colors)
+}
+
+func printMap(myMap map[string]string) {
+	for i, color := range myMap {
+		fmt.Println("Color", i, "is", color)
+	}
 }
